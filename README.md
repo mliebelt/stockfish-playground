@@ -20,3 +20,7 @@ Try out different stockfish versions, and describe exactly what the pre-requisit
 ## Candidates
 
 * stockfish.wasm: version created by niklasf. See [stockfish.wasm repository](https://github.com/lichess-org/stockfish.wasm) for details. See [directory stockfish.wasm](stockfish.wasm) how to use it.
+
+Not yet tried
+
+* [Web GUI for Stockfish](https://github.com/LabinatorSolutions/stockfish-chess-web-gui) Seems to use an older version of stockfish (version 10), but maybe I can learn something from the UI.
