@@ -16,7 +16,7 @@ What is included:
 ## Running
 
 1. Do the usual `npm install` to have `express` setup. The other files are just included as binaries.
-1. Start first the express server, that sets the right headers. See [stockfish.wasm requirements]([stockfish.js](https://www.npmjs.com/package/stockfish.wasm#requirements) why that is needed.
+1. Start first the express server, that sets the right headers. See [stockfish.wasm requirements](https://www.npmjs.com/package/stockfish.wasm#requirements) why that is needed.
 2. Open in your browser the file `index.html`. You will see nothing.
 3. Open the console in your browser, and use some of the UCI commands like `localSF.postMessage('go depth 28')`
 
