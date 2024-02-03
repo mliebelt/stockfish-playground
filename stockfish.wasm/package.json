@@ -1,0 +1,19 @@
+{
+  "name": "stockfish.wasm",
+  "version": "1.0.0",
+  "description": "WebAssembly port of Stockfish, 3 years old.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "chess",
+    "stockfish"
+  ],
+  "author": "Markus Liebelt",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
+}
