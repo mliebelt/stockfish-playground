@@ -16,6 +16,7 @@ Try out different stockfish versions, and describe exactly what the pre-requisit
 * Collect for each implementation all relevant "things". May be, some binary file, or including something as npm package, ...
 * Have a `package.json` file that is sufficient to create a runnable version.
 * Have a `README.md` file, that summarizes what is essential.
+* (optional) Try to isolate the installation and integration from using stockfish (because that is what everyone has to do at the end).
 
 ## Candidates
 
