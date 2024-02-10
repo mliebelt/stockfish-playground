@@ -2,3 +2,4 @@
 /.idea/
 /lichess-stockfish/node_modules/
 /stockfish-wasm-npm/node_modules/
+/lichess-stockfish/lib/

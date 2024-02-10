@@ -1,4 +1,4 @@
-// import { Stockfish } from "./lib/stockfish.js";
+// import { Stockfish } from "./lib-manual/stockfish.js";
 export default async function initStockfish() {
     const stockfish = await Stockfish();
     if (!stockfish) throw new Error("Unable to initialize Stockfish");

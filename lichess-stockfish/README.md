@@ -4,7 +4,8 @@ This is a first try (that works) to integrate a current version into an HTML pag
 
 Do the following steps (after having cloned the repository):
 
-1. Do `npm install`, that ensures that `express` is installed to drive then the web server.
+1. Do `npm install`, that ensures that `express` is installed to drive then the web server, and the defined version of `stockfish`.
+2. Do `npm run copy-lib`, to ensure that the libraries are copied into a known location (here: `lib`).
 2. Start the web server by `npm run serve`.
 3. Open the page `http://localhost:8080/index-tuned.html` in your preferred browser.
 4. Open inside that the console.

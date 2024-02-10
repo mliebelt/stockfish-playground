@@ -4,7 +4,8 @@
   "description": "WebAssembly port of Stockfish 13, with NNUE support.",
   "main": "index.js",
   "scripts": {
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "copy-lib": "rm -rf ./lib && mkdir -p ./lib && cp node_modules/stockfish-nnue.wasm/* ./lib"
   },
   "keywords": [
     "chess",
@@ -14,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "express": "^4.18.2"
+  },
+  "dependencies": {
+    "stockfish-nnue.wasm": "^1.0.0-alpha.2"
   }
 }
