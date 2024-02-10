@@ -4,8 +4,8 @@
   "description": "Full blown stockfish version 16.",
   "main": "index.js",
   "scripts": {
-    "serve": "node server.js.old",
-    "copy-lib": "rm -rf ./lib && mkdir -p ./lib && cp node_modules/stockfish/src/stockfish-nnue-16*.* ./lib"
+    "serve": "node server.js",
+    "copy-lib": "rm -rf ./lib && mkdir -p ./lib && cp node_modules/stockfish/src/stockfish-nnue-16*.* ./lib && ln -s lib/stockfish-nnue-16.js stockfish.js && ln -s lib/stockfish-nnue-16.wasm stockfish.wasm"
   },
   "keywords": [
     "chess",

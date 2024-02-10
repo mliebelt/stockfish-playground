@@ -4,6 +4,7 @@ var app = express();
 app.use(function(req, res, next) {
     res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
     res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+    res.setHeader("Access-Control-Allow-Origin", "*"); // allow CORS
     next();
 });
 
