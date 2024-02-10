@@ -1,7 +1,11 @@
-# Overview
+# Lichess Stockfish
 
-Uses the repository https://github.com/hi-ogawa/Stockfish, that is used by Lichess in the web browser.
-Tried to use Emscripten 2.0.26 (as in the vercel example), but failed. 
-Issue https://github.com/emscripten-core/emsdk/issues/862 says that some errors are fixed in 2.0.30, so upgraded.
+This is a first try (that works) to integrate a current version into an HTML page, and isolate the initialization code from it.
 
-The goal is to have a similar / the same engine running as Lichess. The build with the above versions ran successful, so let us see, if Stockfish can be loaded.
+Do the following steps (after having cloned the repository):
+
+1. Do `npm install`, that ensures that `express` is installed to drive then the web server.
+2. Start the web server by `npm run serve`.
+3. Open the page `http://localhost:8080/index-tuned.html` in your preferred browser.
+4. Open inside that the console.
+5. Try something like: `sf.postMessage('uci')` and look at the result in the console.

@@ -20,6 +20,7 @@ Try out different stockfish versions, and describe exactly what the pre-requisit
 ## Candidates
 
 * stockfish.wasm: version created by niklasf. See [stockfish.wasm repository](https://github.com/lichess-org/stockfish.wasm) for details. See [directory stockfish.wasm](stockfish.wasm) how to use it.
+* lichess-stockfish: version used in lichess (perhaps an older one), including some code how to integrate it. The [`README.md`](lichess-stockfish/README.md) file explains how to use it.
 
 Not yet tried
 
