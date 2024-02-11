@@ -5,6 +5,7 @@ function engineGame(options) {
     ///NOTE: If the WASM binary is not in the expected location, must be added after the hash.
     var engine = typeof STOCKFISH === "function" ? STOCKFISH() : new Worker(options.stockfishjs || 'stockfish.js#stockfish.wasm');
     var evaler = typeof STOCKFISH === "function" ? STOCKFISH() : new Worker(options.stockfishjs || 'stockfish.js#stockfish.wasm');
+    window.engine = evaler;
     var engineStatus = {};
     var displayScore = false;
     var time = { wtime: 300000, btime: 300000, winc: 2000, binc: 2000 };

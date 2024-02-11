@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4">I play</label>
+            <label class="control-label col-xs-4 col-sm-6 col-md-4">I play</label>
             <div class="col-xs-4 col-sm-6 col-md-4">
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-primary active" id="color-white"><input type="radio" name="color">White</label>
@@ -57,14 +57,14 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4"></label>
+            <label class="control-label col-xs-4 col-sm-6 col-md-4"></label>
             <div class="col-xs-4 col-sm-6 col-md-4">
               <button type="button" class="btn btn-primary" onclick="newGame()">New Game</button>
             </div>
           </div>
           
           <div class="form-group">
-            <label for="color" class="control-label col-xs-4 col-sm-6 col-md-4">Promote to</label>
+            <label class="control-label col-xs-4 col-sm-6 col-md-4">Promote to</label>
             <div class="col-xs-4 col-sm-6 col-md-4">
               <select id=promote>
                 <option value=q selected>Queen</option>
@@ -78,19 +78,21 @@
         <h5>Evaluation</h5>
         <pre id=evaluation></pre>
     </div>
+    </div>
     <script src="enginegame.js"></script>
     <script>
-      var wait_for_script;
-      var newGame = function (){};
+      let wait_for_script;
+      let newGame = function (){};
       
       function init()
       {
-        var game = engineGame();
+        let game = engineGame();
+        window.game = game;
     
         newGame = function newGame() {
-            var baseTime = parseFloat($('#timeBase').val()) * 60;
-            var inc = parseFloat($('#timeInc').val());
-            var skill = parseInt($('#skillLevel').val());
+            let baseTime = parseFloat($('#timeBase').val()) * 60;
+            let inc = parseFloat($('#timeInc').val());
+            let skill = parseInt($('#skillLevel').val());
             game.reset();
             game.setTime(baseTime, inc);
             game.setSkillLevel(skill);

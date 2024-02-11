@@ -13,7 +13,7 @@ Do the following steps (after having cloned the repository):
 
 ## TODOs
 
-It would be nice to have a solution with not so much dependencies. This is the setup that works:
+It would be nice to have a solution with not so many dependencies. This is the setup that works:
 
 * Have `stockfish.js` loaded as part of the HTML page.
 * Ensure that `stockfish-init.js` is loaded and executed after the loading of Stockfish.

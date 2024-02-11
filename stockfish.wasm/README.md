@@ -5,7 +5,7 @@ Located at [stockfish.wams](https://github.com/niklasf/stockfish.wasm), develope
 Features:
 
 * WebAssembly port of the stockfish engine.
-* Published 3 years ago, not developed any more.
+* Published 3 years ago, not developed anymore.
 * Had a simple example file that really worked.
 * Needs special headers set when running.
 

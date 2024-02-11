@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script src="stockfish-init.js"></script>
+<script  type="module">
+    // import { stockfishInit } from "./stockfish-init.js"
+
+    function init() {
+        let engine = stockfishInit({})
+        window.sf = engine
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
